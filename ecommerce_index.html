@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>E-Commerce Store</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#cart">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-list">
+        <div class="product" data-id="1" data-name="Product 1" data-price="20">
+          <h3>Product 1</h3>
+          <p>Price: $20</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2" data-name="Product 2" data-price="30">
+          <h3>Product 2</h3>
+          <p>Price: $30</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="3" data-name="Product 3" data-price="40">
+          <h3>Product 3</h3>
+          <p>Price: $40</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart">
+    <div class="container">
+      <h2>Your Cart</h2>
+      <ul class="cart-list"></ul>
+      <p>Total: $<span id="total">0</span></p>
+      <button id="checkout">Checkout</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 E-Commerce Store. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
